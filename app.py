@@ -1,7 +1,7 @@
 import numpy as np
 import json
 from flask import Flask, request, jsonify
-from analysis_BERT_main import predict
+from sentiment_analysis_koBERT import predict
 
 
 app = Flask(__name__)
