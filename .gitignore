@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# pyvenv
+poetry.lock
+pyproject.toml
+
+.DS_Store
+
+# pytorch files
+data/
