@@ -4,8 +4,7 @@ import torch
 from torch import nn
 from flask import Flask, request, jsonify
 from werkzeug.exceptions import BadRequest
-import sys
-from os import path
+from sentiment_analysis_koBERT import predict
 
 app = Flask(__name__)
 
@@ -14,8 +13,6 @@ app = Flask(__name__)
 def test():
     content = json.loads(request.get_data('content'))
     print(content['content'])
-    sys.path.append(path.join(path.dirname(__file__)))
-    from sentiment_analysis_koBERT import predict
     data = predict(content['content'])
     return jsonify({
         'emotion': data
