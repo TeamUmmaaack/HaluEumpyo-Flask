@@ -1,7 +1,6 @@
 import os
 import json
 import torch
-from torch import nn
 from flask import Flask, request, jsonify
 from werkzeug.exceptions import BadRequest
 from sentiment_analysis_koBERT import predict
