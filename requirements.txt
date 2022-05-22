@@ -1,3 +1,4 @@
+-f https://download.pytorch.org/whl/torch_stable.html
 autopep8==1.6.0
 boto3==1.21.27
 botocore==1.24.27
@@ -31,9 +32,9 @@ sentencepiece==0.1.96
 six==1.16.0
 tokenizers==0.12.1
 toml==0.10.2
-torch==1.11.0
+torch==1.11.0+cpu
 torchaudio==0.11.0
-torchvision==0.12.0
+torchvision==0.12.0+cpu
 tqdm==4.63.1
 transformers==4.17.0
 typing_extensions==4.1.1
