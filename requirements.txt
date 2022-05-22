@@ -1,44 +1,42 @@
-autopep8 @ file:///Users/macp/Library/Caches/pypoetry/artifacts/99/fa/8e/112982d07bedbc9f4184629dd998ac5b3cb0a01cdee98ded03128c72bc/autopep8-1.6.0-py2.py3-none-any.whl
-boto3 @ file:///Users/macp/Library/Caches/pypoetry/artifacts/3f/89/4e/936cae95b000028eb12ff4ae40e6a5d844476ad9a914709611115ee84e/boto3-1.22.13-py3-none-any.whl
-botocore @ file:///Users/macp/Library/Caches/pypoetry/artifacts/4c/33/28/eb326e46b8ff7d1df952b18446b1b9c140ec58cc55b99257f92eea33ad/botocore-1.25.13-py3-none-any.whl
-certifi @ file:///Users/macp/Library/Caches/pypoetry/artifacts/77/74/3e/daf57610ff13227e3b3f50a78487055f6ac94cc9363abd2463be34c5e9/certifi-2021.10.8-py2.py3-none-any.whl
-charset-normalizer @ file:///Users/macp/Library/Caches/pypoetry/artifacts/ae/14/8e/087a104edb7ec627884755272de815d8ee4fd53b8745fdb12a087dd2e1/charset_normalizer-2.0.12-py3-none-any.whl
-click @ file:///Users/macp/Library/Caches/pypoetry/artifacts/bd/9c/91/fc982221d93312eb60d91ed31ec2945771bec0eb111953316ae8293dce/click-8.1.3-py3-none-any.whl
-Cython @ file:///Users/macp/Library/Caches/pypoetry/artifacts/11/d8/e2/2fb6cfdc9fb3d0a15147d41930e0a76c152abbf3ac98c1d03f15371234/Cython-0.29.28-py2.py3-none-any.whl
-filelock @ file:///Users/macp/Library/Caches/pypoetry/artifacts/6f/02/3a/be3741914dd0a399b75b44387dfba4e7967e0273e4a28fe1a6a5865360/filelock-3.7.0-py3-none-any.whl
-Flask @ file:///Users/macp/Library/Caches/pypoetry/artifacts/a5/0f/c7/2e0c902bfd384958968c3df5693b61c15302062bd604b789684156cd8e/Flask-2.1.2-py3-none-any.whl
-gluonnlp @ file:///Users/macp/Library/Caches/pypoetry/artifacts/4b/ac/e5/8be9f4d74fe5f6daa8ee8fc80380304cd7fe11f27c6553d362e7b69032/gluonnlp-0.10.0.tar.gz
+autopep8==1.6.0
+boto3==1.21.27
+botocore==1.24.27
+certifi==2021.10.8
+charset-normalizer==2.0.12
+Cython==0.29.28
+filelock==3.6.0
+Flask==2.0.3
+gluonnlp==0.10.0
 graphviz==0.8.4
 gunicorn==20.1.0
 huggingface-hub==0.6.0
-idna @ file:///Users/macp/Library/Caches/pypoetry/artifacts/f7/09/c9/8e80952436ff87855ddff4891a35ecf913b2b5dc97911f02a070ff2b1f/idna-3.3-py3-none-any.whl
-importlib-metadata @ file:///Users/macp/Library/Caches/pypoetry/artifacts/c9/3e/75/cf7a7a52d23e859075d6702d5c617168f8a4046b1a43888939c2631c4b/importlib_metadata-4.11.3-py3-none-any.whl
-itsdangerous @ file:///Users/macp/Library/Caches/pypoetry/artifacts/a0/eb/86/3b57c01995c6daad9f3b47aba7edb72501b915276f47ccf22efe74a37e/itsdangerous-2.1.2-py3-none-any.whl
-Jinja2 @ file:///Users/macp/Library/Caches/pypoetry/artifacts/33/db/47/0926a99dba6f131e3566591eed52f286b44bcfddcbe351f4116fc4d26f/Jinja2-3.1.2-py3-none-any.whl
-jmespath @ file:///Users/macp/Library/Caches/pypoetry/artifacts/a6/b1/e0/623eaec6007fe9b9a20269d607049615f940793e62dd0e166a9f55e679/jmespath-1.0.0-py3-none-any.whl
-MarkupSafe @ file:///Users/macp/Library/Caches/pypoetry/artifacts/91/9b/05/057ca2faee421138dc11ac5f4cb36ea552ed73db287de0c4c41f15b365/MarkupSafe-2.1.1-cp38-cp38-macosx_10_9_x86_64.whl
+idna==2.6
+importlib-metadata==4.11.3
+itsdangerous==2.1.2
+Jinja2==3.1.1
+jmespath==1.0.0
+MarkupSafe==2.1.1
 mxnet==1.8.0.post0
-numpy @ file:///Users/macp/Library/Caches/pypoetry/artifacts/4f/d1/d7/8d093793f8eba59dd4f8429abfc31414ef98d639be7eb02e5f630cacc6/numpy-1.22.3-cp38-cp38-macosx_10_14_x86_64.whl
-packaging @ file:///Users/macp/Library/Caches/pypoetry/artifacts/7f/d5/4c/1d3c4776012fc0bbe1f86e69bde2c5e36d2d32caa2e4845ac1fc08ab3f/packaging-21.3-py3-none-any.whl
-Pillow==9.1.1
+numpy==1.22.3
+packaging==21.3
 protobuf==3.20.1
-pycodestyle @ file:///Users/macp/Library/Caches/pypoetry/artifacts/c8/b5/c4/20e98d955193296673ec9d57510115c96ea8c60a7e2cd212c3999f9d20/pycodestyle-2.8.0-py2.py3-none-any.whl
-pyparsing @ file:///Users/macp/Library/Caches/pypoetry/artifacts/4a/b9/34/28557b740fb51bd635f6794a95d02e23de02724e07f03c3ad49cebcf86/pyparsing-3.0.9-py3-none-any.whl
-python-dateutil @ file:///Users/macp/Library/Caches/pypoetry/artifacts/0f/f1/e2/e1d3399cea26388e2ed5b93ea3e7c137d2b4027c5ba14c64ab839294ed/python_dateutil-2.8.2-py2.py3-none-any.whl
+pycodestyle==2.8.0
+pyparsing==3.0.7
+python-dateutil==2.8.2
 PyYAML==6.0
-regex @ file:///Users/macp/Library/Caches/pypoetry/artifacts/22/11/83/51e769a85e483b797fda9a5237c01d7d5b912854240aa8e6cfe9902522/regex-2022.4.24-cp38-cp38-macosx_10_9_x86_64.whl
-requests @ file:///Users/macp/Library/Caches/pypoetry/artifacts/dc/17/bf/8d9779110a13421f6181028974b24800ec70f28bf9b311411e1868b8c7/requests-2.27.1-py2.py3-none-any.whl
-s3transfer @ file:///Users/macp/Library/Caches/pypoetry/artifacts/5c/ab/1b/2fbd71ad53aa8a0e0ae2297da508aa28029aa39c29feb1316f8743f449/s3transfer-0.5.2-py3-none-any.whl
-sentencepiece @ file:///Users/macp/Library/Caches/pypoetry/artifacts/c2/54/b6/bdf5712fbf6c8df51afce96a9ef8954dd601ebfce81ea653375a13292f/sentencepiece-0.1.96-cp38-cp38-macosx_10_6_x86_64.whl
-six @ file:///Users/macp/Library/Caches/pypoetry/artifacts/48/e6/04/8118155ae3ec3a16dd2a213bbf7a7d8a62c596b2e90f73a22c896269f1/six-1.16.0-py2.py3-none-any.whl
-tokenizers @ file:///Users/macp/Library/Caches/pypoetry/artifacts/33/9b/d8/cb7ea105a983108d22b285cda4b2504a675ca6e502ae317eac624bc7da/tokenizers-0.12.1-cp38-cp38-macosx_10_11_x86_64.whl
-toml @ file:///Users/macp/Library/Caches/pypoetry/artifacts/9f/8c/c3/7b4f6778d60f3c9fa11f8fd0e48243bbad25a04975e0a01006b6350594/toml-0.10.2-py2.py3-none-any.whl
+regex==2022.3.15
+requests==2.27.1
+s3transfer==0.5.2
+sentencepiece==0.1.96
+six==1.16.0
+tokenizers==0.12.1
+toml==0.10.2
 torch==1.11.0
 torchaudio==0.11.0
 torchvision==0.12.0
-tqdm @ file:///Users/macp/Library/Caches/pypoetry/artifacts/0f/74/cd/a2ed528f2003187ed0adf3ad1f88faf43d991f72331e2c2f9c42766f24/tqdm-4.64.0-py2.py3-none-any.whl
-transformers @ file:///Users/macp/Library/Caches/pypoetry/artifacts/9b/70/6e/a256940e3818ae6e28dc3a0bed06de085576ba4d8ad17c4fb428fd513a/transformers-4.19.0-py3-none-any.whl
-typing-extensions @ file:///Users/macp/Library/Caches/pypoetry/artifacts/18/72/6c/690f7427f477807a9597dee26e599e0e73d1aa5fa12a06fa5ed704b967/typing_extensions-4.2.0-py3-none-any.whl
-urllib3 @ file:///Users/macp/Library/Caches/pypoetry/artifacts/82/6d/7d/27c3eb08fd57859a15aa9472bf2acde15878f936b4283bae9b2ad55599/urllib3-1.26.9-py2.py3-none-any.whl
-Werkzeug @ file:///Users/macp/Library/Caches/pypoetry/artifacts/a8/99/53/2b38afce2b713a1a222b01c157d2ccf7c74b8ee3efc42a4ae5742f5d3c/Werkzeug-2.1.2-py3-none-any.whl
-zipp @ file:///Users/macp/Library/Caches/pypoetry/artifacts/4f/ef/74/a2e3ed624c546651f2ae9baca2eec6d2597a5c87b8370870bab625340c/zipp-3.8.0-py3-none-any.whl
+tqdm==4.63.1
+transformers==4.17.0
+typing_extensions==4.1.1
+urllib3==1.25.4
+Werkzeug==2.0.3
+zipp==3.7.0
