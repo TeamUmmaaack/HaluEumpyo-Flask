@@ -9,7 +9,8 @@ from os import path
 
 app = Flask(__name__)
 
-@app.route('/test', methods=['POST'])
+
+@app.route('/emotion', methods=['POST'])
 def test():
     content = json.loads(request.get_data('content'))
     print(content['content'])
@@ -17,11 +18,9 @@ def test():
     from sentiment_analysis_koBERT import predict
     data = predict(content['content'])
     return jsonify({
-        'emotion_id': data
+        'emotion': data
     })
 
 
 if __name__ == '__main__':
-    PORT = 50051
-
     app.run(host="0.0.0.0", debug=True, port=int(os.environ.get("PORT", 5000)))
