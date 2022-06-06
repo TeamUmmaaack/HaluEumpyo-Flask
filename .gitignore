@@ -136,3 +136,7 @@ pyproject.toml
 
 # pytorch files
 data/
+checkpoint/
+
+*.mtx
+*.pickle
