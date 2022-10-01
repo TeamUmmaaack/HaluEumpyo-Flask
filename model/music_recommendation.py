@@ -16,7 +16,7 @@ from torch.utils.data import Dataset
 from model.classifier import BERTClassifier
 
 kobert_model, vocab = get_pytorch_kobert_model()
-model = BERTClassifier(kobert_model, dr_rate=0.5, num_classes=4)
+model = BERTClassifier(kobert_model, dr_rate=0.5, num_classes=7)
 
 ctx = "cuda" if torch.cuda.is_available() else "cpu"
 device = torch.device(ctx)
@@ -154,9 +154,13 @@ def recommend(more):
     result = melon.loc[music_indices]
     result['점수'] = [idx[1] for idx in sim_rank_idx]
     emotion = predict(more)[-1]
-    result = result[result['감정'] == emotion]
+    if emotion in [0, 1, 2, 3]:
+        result = result[result['감정'] == emotion]
 
-    return [result.iloc[0], result.iloc[1], result.iloc[2]]
+    return {
+        'emotion': emotion,
+        'recommended_musics': [result.iloc[0], result.iloc[1], result.iloc[2]]
+    }
 
 
 learn_lyrics(tf)

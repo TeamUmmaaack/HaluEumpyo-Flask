@@ -1,9 +1,10 @@
+from lib2to3.pytree import convert
 import os
 import json
 from flask import Flask, request, jsonify
 from werkzeug.exceptions import BadRequest
 from APIService.convert_emotion import convert_emotion
-from model.sentiment_analysis_koBERT import recommend
+from model.music_recommendation import recommend
 
 app = Flask(__name__)
 
@@ -12,14 +13,17 @@ app = Flask(__name__)
 def test():
     content = json.loads(request.get_data('content'))
     print(content['content'])
-    data = recommend(content['content'])
-    return_data = data.iloc[0, 0:5]
-    music_id = int(return_data['id'])
-    emotion_id = int(return_data['감정'])
-    converted_emotion_id = convert_emotion(emotion_id)
+    datas = recommend(content['content'])
+    emotions_id = convert_emotion(datas["emotion"])
+    recommended_data = datas["recommended_musics"]
+    music_id_list = []
+    for data in recommended_data:
+        music_id_list.append(int(data['id']))
+
     return jsonify({
-        'emotion': converted_emotion_id,
-        'musicId': music_id
+        'emotion': emotions_id,
+        'recommended_music': music_id_list[0],
+        'similar_musics': music_id_list[1:]
     })
 
 
