@@ -8,7 +8,7 @@ class BERTClassifier(nn.Module):
     def __init__(self,
                  bert,
                  hidden_size=768,
-                 num_classes=4,
+                 num_classes=7,
                  dr_rate=None,
                  params=None):
         super(BERTClassifier, self).__init__()
