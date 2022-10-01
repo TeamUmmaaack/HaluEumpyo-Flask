@@ -49,7 +49,7 @@ class BERTDataset(Dataset):
 max_len = 64
 batch_size = 64
 warmup_ratio = 0.1
-num_epochs = 20
+num_epochs = 5
 max_grad_norm = 1
 log_interval = 200
 learning_rate = 5e-5
@@ -116,8 +116,6 @@ with open(txt_file, encoding='utf-8') as f:
         stop_words.append(i.strip())
 stop_words = set(stop_words)
 
-# 일반명사, 고유명사, 동사, 형용사
-
 
 # 일반명사, 고유명사, 동사, 형용사
 def tokenize(raw, pos=["NNG", "NNP", "VV", "VA"], stopword=stop_words):
@@ -155,11 +153,10 @@ def recommend(more):
     music_indices = [idx[0] for idx in sim_rank_idx]
     result = melon.loc[music_indices]
     result['점수'] = [idx[1] for idx in sim_rank_idx]
-    emotions = predict(more)
-    emotion = emotions[-1]
+    emotion = predict(more)[-1]
     result = result[result['감정'] == emotion]
 
-    return result
+    return [result.iloc[0], result.iloc[1], result.iloc[2]]
 
 
 learn_lyrics(tf)
